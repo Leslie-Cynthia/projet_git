@@ -1,0 +1,4 @@
+page=$(curl -s https://www.coingecko.com/en/coins/bitcoin)
+price=$(echo "$page" | grep -oP '"price":\K[0-9]+(\.[0-9]+)?' |head -1)
+if [ ! -f data.csv ]; then
+	echo "timestamp,price" <
