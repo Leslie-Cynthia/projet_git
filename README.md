@@ -33,7 +33,7 @@ projet_git/ ├── app.py # Dashboard Dash en Python ├── scraper.sh # S
 
     pip3 install dash pandas plotly --break-system-packages
 
-📈 Lancer le dashboard
+📈 Accès à l'application
 
 Dans le terminal :
 
@@ -44,6 +44,9 @@ Accéder à l'interface :
     Depuis la VM : http://127.0.0.1:8050
 
     Depuis l’hôte (si redirection NAT activée) : http://localhost:8050
+
+Assurez-vous que le port 8050 est bien redirigé dans les paramètres réseau de VirtualBox
+
 
 🔁 Automatisation (cron)
 1. Scraping toutes les minutes
