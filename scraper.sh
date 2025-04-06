@@ -9,5 +9,7 @@ if [ ! -f data.csv ]; then
 	echo "timestamp,price" > data.csv
 fi
 
+sed -i '/NAN/d' data.csv
+
 echo "$(date '+%Y-%m-%d %H:%M:%S'),$price" >> data.csv
 
